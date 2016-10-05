@@ -1,2 +1,2 @@
-# ajax-login-example
+# Ajax login example
 Very simple AJAX login example.
