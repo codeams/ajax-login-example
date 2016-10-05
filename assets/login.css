@@ -1,0 +1,120 @@
+
+/**
+ * General styles CSS document
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+body {
+  padding: 40px 0 0;
+}
+
+a, a:visited {
+  color: hsla(254,53%,50%,1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body, input {
+  line-height: 1;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;;
+}
+
+/* Markup */
+
+.ui-locker {
+  display: none;
+  position: fixed;
+  z-index: 555;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrapper {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.error-message {
+  display: none;
+  color: red;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='submit'] {
+  width: 100%;
+}
+
+input[type='text'],
+input[type='password'] {
+  outline: 2px solid transparent;
+  padding: 8px 10px;
+  border: 2px solid #ddd;
+  cursor: text;
+  transition: outline-color 400ms;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  outline: 2px solid hsla(254,53%,50%,1);
+}
+
+input[type='submit'] {
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  background-color: hsl(254,53%,50%);
+  color: white;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+}
+
+
+/* Margins */
+
+.title {
+  margin-bottom: 30px;
+}
+
+input[type='text'], input[type='submit'], input[type='password'], label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.instructions, .error-message, .form {
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* --- */
+
+.welcome-message, .page-title {
+  margin-bottom: 20px;
+}
+
+.class {
+  margin-bottom: 5px;
+  padding: 30px;
+  background-color: hsl(254,53%,50%);
+  color: white;
+  cursor: pointer;
+}
